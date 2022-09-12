@@ -1,4 +1,4 @@
-const prettier = require("prettier");
+import prettier from "prettier";
 
 /**
  * @param { Buffer } data

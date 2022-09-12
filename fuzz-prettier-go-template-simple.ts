@@ -1,5 +1,5 @@
-const prettier = require("prettier");
-const prettierPluginGoTemplate = require("prettier-plugin-go-template");
+import prettier from "prettier";
+import prettierPluginGoTemplate from "prettier-plugin-go-template";
 
 /**
  * @param { Buffer } data

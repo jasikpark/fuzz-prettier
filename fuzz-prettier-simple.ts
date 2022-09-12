@@ -1,4 +1,4 @@
-const prettier = require("prettier");
+import prettier from "prettier";
 
 /**
  * { type: Error, partialMessage: string }[]

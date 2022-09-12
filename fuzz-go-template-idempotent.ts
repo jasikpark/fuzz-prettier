@@ -3,7 +3,8 @@ import prettierPluginGoTemplate from "prettier-plugin-go-template";
 import assert from "node:assert/strict";
 
 const config = {
-  parser: "html",
+  parser: "go-template",
+  plugins: [prettierPluginGoTemplate],
 };
 
 module.exports.fuzz = function (data: Buffer) {

@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "fuzz-babel-simple": "jazzer ./fuzz-prettier-simple.js corpus-babel -- -max_total_time=60",
-    "fuzz-babel-idempotent": "jazzer ./fuzz-prettier-babel-idempotent.js corpus-babel -- -max_total_time=60",
-    "fuzz-html-simple": "jazzer ./fuzz-prettier-html-simple.js corpus-html -- -max_total_time=60",
-    "fuzz-html-idempotent": "jazzer ./fuzz-prettier-html-idempotent.js corpus-html -- -max_total_time=60",
-    "fuzz-go-template-simple": "jazzer ./fuzz-prettier-go-template-simple.js ./corpus -- -max_total_time=60",
+    "fuzz-babel-simple": "jazzer ./fuzz-prettier-simple.js corpus -- -max_total_time=60",
+    "fuzz-babel-idempotent": "jazzer ./fuzz-prettier-babel-idempotent.js corpus -- -max_total_time=60",
+    "fuzz-html-simple": "jazzer ./fuzz-prettier-html-simple.js corpus -- -max_total_time=60",
+    "fuzz-html-idempotent": "jazzer ./fuzz-prettier-html-idempotent.js corpus -- -max_total_time=60",
+    "fuzz-go-template-simple": "jazzer ./fuzz-prettier-go-template-simple.js corpus -- -max_total_time=60",
     "fuzz-go-template-idempotent": "jazzer ./dist/fuzz-go-template-idempotent.js corpus -- -max_total_time=60"
   },
   "author": "",

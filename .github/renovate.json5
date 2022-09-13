@@ -1,0 +1,29 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
+    "config:base",
+    ":automergeBranch",
+    // we don't have status checks atm
+    // ":automergeRequireAllStatusChecks",
+    ":automergeLinters",
+    ":automergeTesters",
+    ":automergeMinor",
+    ":automergeTypes",
+    ":enableVulnerabilityAlerts",
+    ":maintainLockFilesMonthly",
+    ":pinSkipCi",
+  ],
+  assignees: ["jasikpark"],
+  packageRules: [
+    {
+      matchPackageNames: [
+        "prettier",
+        "prettier-plugin-astro",
+        "prettier-plugin-go-template",
+        "jazzer.js/core",
+        "typescript",
+      ],
+      automerge: true,
+    },
+  ],
+}

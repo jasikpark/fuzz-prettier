@@ -1,19 +1,16 @@
-const prettier = require("prettier");
+import prettier from "prettier";
+import assert from "node:assert/strict";
 
 const config = {
   parser: "babel",
 };
 
-/**
- * @param { Buffer } data
- */
-module.exports.fuzz = function (data) {
-  let formatted;
+module.exports.fuzz = function (data: Buffer) {
+  let formatted: string;
 
   try {
     formatted = prettier.format(data.toString(), config);
   } catch (error) {
-    // check that the error message returns this value
     if (error instanceof SyntaxError) {
       return;
     }
@@ -22,9 +19,5 @@ module.exports.fuzz = function (data) {
 
   const formatted_twice = prettier.format(formatted, config);
 
-  if (formatted !== formatted_twice) {
-    throw new Error(
-      `Idempotency Error: formatting twice did not produce the same output.`
-    );
-  }
+  assert.deepStrictEqual(formatted, formatted_twice);
 };

@@ -1,9 +1,6 @@
 import prettier from "prettier";
 
-/**
- * @param { Buffer } data
- */
-module.exports.fuzz = function (data) {
+module.exports.fuzz = function (data: Buffer) {
   try {
     prettier.format(data.toString(), { parser: "html" });
   } catch (error) {

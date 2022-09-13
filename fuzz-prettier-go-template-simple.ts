@@ -1,10 +1,7 @@
 import prettier from "prettier";
 import prettierPluginGoTemplate from "prettier-plugin-go-template";
 
-/**
- * @param { Buffer } data
- */
-module.exports.fuzz = function (data) {
+module.exports.fuzz = function (data: Buffer) {
   try {
     prettier.format(data.toString(), {
       parser: "go-template",
@@ -14,8 +11,8 @@ module.exports.fuzz = function (data) {
     // check that the error message returns this value
     if (
       error instanceof SyntaxError ||
-      error?.message.includes("SyntaxError") ||
-      error.includes("SyntaxError")
+      (error instanceof Error && error?.message.includes("SyntaxError")) ||
+      (typeof error === "string" && error.includes("SyntaxError"))
     ) {
       return;
     }

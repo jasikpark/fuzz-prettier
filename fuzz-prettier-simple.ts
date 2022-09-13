@@ -9,10 +9,7 @@ const ALLOWED_ERRORS = [
   { type: SyntaxError, partialMessage: "Unterminated regular expression" },
 ];
 
-/**
- * @param { Buffer } data
- */
-module.exports.fuzz = function (data) {
+module.exports.fuzz = function (data: Buffer) {
   try {
     prettier.format(data.toString(), { parser: "babel" });
   } catch (error) {

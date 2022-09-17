@@ -6,11 +6,11 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "build:watch": "tsc -p tsconfig.json --watch",
-    "fuzz-babel-simple": "jazzer ./dist/fuzz-prettier-simple.js corpus -- -max_total_time=60",
-    "fuzz-babel-idempotent": "jazzer ./dist/fuzz-prettier-babel-idempotent.js corpus -- -max_total_time=60",
-    "fuzz-html-simple": "jazzer ./dist/fuzz-prettier-html-simple.js corpus -- -max_total_time=60",
+    "fuzz-babel-simple": "jazzer ./dist/fuzz-babel-simple.js corpus -- -max_total_time=60",
+    "fuzz-babel-idempotent": "jazzer ./dist/fuzz-babel-idempotent.js corpus -- -max_total_time=60",
+    "fuzz-html-simple": "jazzer ./dist/fuzz-html-simple.js corpus -- -max_total_time=60",
     "fuzz-html-idempotent": "jazzer ./dist/fuzz-html-idempotent.js corpus -- -max_total_time=60",
-    "fuzz-go-template-simple": "jazzer ./dist/fuzz-prettier-go-template-simple.js corpus -- -max_total_time=60",
+    "fuzz-go-template-simple": "jazzer ./dist/fuzz-go-template-simple.js corpus -- -max_total_time=60",
     "fuzz-go-template-idempotent": "jazzer ./dist/fuzz-go-template-idempotent.js corpus -- -max_total_time=60"
   },
   "author": "",

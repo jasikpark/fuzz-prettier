@@ -26,6 +26,6 @@
     "typescript": "4.8.4"
   },
   "dependencies": {
-    "prettier-plugin-astro": "^0.6.0"
+    "prettier-plugin-astro": "^0.7.0"
   }
 }

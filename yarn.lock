@@ -10,10 +10,10 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@astrojs/compiler@^0.29.3":
-  version "0.29.4"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.29.4.tgz#ed3cbc8345b1320285bdcc9c5a8339ee82c9d41b"
-  integrity sha512-MN0+AcKeZXXpC8AiEiYQljR5IU4LUgGU7NjGvEOXQ419PfRybUd1op4KoilkA1L0QEVYSoePcPnUVDoWN4HpYQ==
+"@astrojs/compiler@^1.0.1":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.2.2.tgz#79a0e5085c1e8f4b3d794ba6a20a1823d8554133"
+  integrity sha512-S5UfaoYPgdKjxXjHq9jwHfNJJYZq77WRGgT6bQRmccGI/3dC/TakDW2nITNhju6kvRK1I8GI7ZHFJnVfA9cyhg==
 
 "@babel/code-frame@^7.18.6":
   version "7.18.6"
@@ -1049,13 +1049,13 @@ prebuild-install@^7.1.1:
     tar-fs "^2.0.0"
     tunnel-agent "^0.6.0"
 
-prettier-plugin-astro@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.7.0.tgz#e6dcd5fe1750bd87343123d86ea5f1dcd5038426"
-  integrity sha512-ehCUx7MqHWvkHwUmxxAWLsL35pFaCTM5YXQ8xjG/1W6dY2yBhvEks+2aCfjeI5zmMrZNCXkiMQtpznSlLSLrxw==
+prettier-plugin-astro@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.8.0.tgz#ae014f8263ca383ee853192cc40a516e914684a5"
+  integrity sha512-kt9wk33J7HvFGwFaHb8piwy4zbUmabC8Nu+qCw493jhe96YkpjscqGBPy4nJ9TPy9pd7+kEx1zM81rp+MIdrXg==
   dependencies:
-    "@astrojs/compiler" "^0.29.3"
-    prettier "^2.7.1"
+    "@astrojs/compiler" "^1.0.1"
+    prettier "^2.8.3"
     sass-formatter "^0.7.5"
     synckit "^0.8.4"
 
@@ -1066,10 +1066,15 @@ prettier-plugin-go-template@0.0.13:
   dependencies:
     ulid "^2.3.0"
 
-prettier@2.7.1, prettier@^2.7.1:
+prettier@2.7.1:
   version "2.7.1"
   resolved "https://registry.npmjs.org/prettier/-/prettier-2.7.1.tgz"
   integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
+
+prettier@^2.8.3:
+  version "2.8.6"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.6.tgz#5c174b29befd507f14b83e3c19f83fdc0e974b71"
+  integrity sha512-mtuzdiBbHwPEgl7NxWlqOkithPyp4VN93V7VeHVWBF+ad3I5avc0RVDT4oImXQy9H/AqxA2NSQH8pSxHW6FYbQ==
 
 process-nextick-args@~1.0.6:
   version "1.0.7"

@@ -21,7 +21,7 @@
     "@jazzer.js/core": "1.4.0",
     "@types/node": "18.15.10",
     "@types/prettier": "2.7.2",
-    "prettier": "2.8.7",
+    "prettier": "3.0.3",
     "prettier-plugin-go-template": "0.0.13",
     "typescript": "5.0.2"
   },

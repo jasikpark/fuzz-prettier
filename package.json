@@ -22,12 +22,12 @@
     "@jazzer.js/core": "1.4.0",
     "@types/node": "18.15.10",
     "@types/prettier": "2.7.2",
-    "prettier": "2.8.7",
+    "prettier": "3.0.3",
     "prettier-plugin-go-template": "0.0.13",
     "typescript": "5.0.2"
   },
   "dependencies": {
-    "prettier-plugin-astro": "^0.8.0",
+    "prettier-plugin-astro": "^0.8.1",
     "prettier-plugin-toml": "^1.0.0"
   },
   "packageManager": "pnpm@8.8.0+sha256.d713a5750e41c3660d1e090608c7f607ad00d1dd5ba9b6552b5f390bf37924e9"

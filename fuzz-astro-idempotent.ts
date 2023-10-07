@@ -7,11 +7,11 @@ const config = {
   plugins: [prettierPluginAstro],
 };
 
-module.exports.fuzz = function (data: Buffer) {
+module.exports.fuzz = async function (data: Buffer) {
   let formatted;
 
   try {
-    formatted = prettier.format(data.toString(), config);
+    formatted = await prettier.format(data.toString(), config);
   } catch (error: unknown) {
     // check that the error message returns this value
     if (error instanceof SyntaxError) {

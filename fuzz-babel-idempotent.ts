@@ -5,11 +5,11 @@ const config = {
   parser: "babel",
 };
 
-module.exports.fuzz = function (data: Buffer) {
+module.exports.fuzz = async function (data: Buffer) {
   let formatted: string;
 
   try {
-    formatted = prettier.format(data.toString(), config);
+    formatted = await prettier.format(data.toString(), config);
   } catch (error) {
     if (error instanceof SyntaxError) {
       return;

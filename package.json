@@ -11,6 +11,7 @@
     "fuzz-html-simple": "jazzer ./dist/fuzz-html-simple.js corpus -- -max_total_time=60",
     "fuzz-html-idempotent": "jazzer ./dist/fuzz-html-idempotent.js corpus -- -max_total_time=60",
     "fuzz-go-template-simple": "jazzer ./dist/fuzz-go-template-simple.js corpus -- -max_total_time=60",
+    "fuzz-toml-simple": "jazzer ./dist/fuzz-toml-simple.js corpus -- -max_total_time=60",
     "fuzz-go-template-idempotent": "jazzer ./dist/fuzz-go-template-idempotent.js corpus -- -max_total_time=60",
     "fuzz-astro-simple": "jazzer ./dist/fuzz-astro-simple.js corpus -- -max_total_time=60",
     "fuzz-astro-idempotent": "jazzer ./dist/fuzz-astro-idempotent.js corpus -- -max_total_time=60"
@@ -26,7 +27,8 @@
     "typescript": "5.0.2"
   },
   "dependencies": {
-    "prettier-plugin-astro": "^0.8.0"
+    "prettier-plugin-astro": "^0.8.0",
+    "prettier-plugin-toml": "^1.0.0"
   },
-  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+  "packageManager": "pnpm@8.8.0+sha256.d713a5750e41c3660d1e090608c7f607ad00d1dd5ba9b6552b5f390bf37924e9"
 }

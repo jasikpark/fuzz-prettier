@@ -18,7 +18,7 @@ devDependencies:
     version: 1.7.0
   '@jazzer.js/jest-runner':
     specifier: ^2.0.0
-    version: 2.0.0(typescript@5.0.2)
+    version: 2.0.0(typescript@5.2.2)
   '@types/jest':
     specifier: ^29.5.5
     version: 29.5.5
@@ -39,10 +39,10 @@ devDependencies:
     version: 0.0.13(prettier@3.0.3)
   ts-jest:
     specifier: ^29.1.1
-    version: 29.1.1(@babel/core@7.23.0)(jest@29.7.0)(typescript@5.0.2)
+    version: 29.1.1(@babel/core@7.23.0)(jest@29.7.0)(typescript@5.2.2)
   typescript:
-    specifier: 5.0.2
-    version: 5.0.2
+    specifier: 5.2.2
+    version: 5.2.2
 
 packages:
 
@@ -562,12 +562,12 @@ packages:
       - supports-color
     dev: true
 
-  /@jazzer.js/jest-runner@2.0.0(typescript@5.0.2):
+  /@jazzer.js/jest-runner@2.0.0(typescript@5.2.2):
     resolution: {integrity: sha512-lJ9QzemjrU40VGMX0BaP2WxJE1lZ5S88ob4MX8g5tjIJOZF5hLwFraE9PBOZ842ofi0UFGw8ThNeQvjNppVzBA==}
     engines: {node: '>= 14.0.0', npm: '>= 7.0.0'}
     dependencies:
       '@jazzer.js/core': 2.0.0
-      cosmiconfig: 8.3.6(typescript@5.0.2)
+      cosmiconfig: 8.3.6(typescript@5.2.2)
       istanbul-reports: 3.1.6
     transitivePeerDependencies:
       - supports-color
@@ -1358,7 +1358,7 @@ packages:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
     dev: true
 
-  /cosmiconfig@8.3.6(typescript@5.0.2):
+  /cosmiconfig@8.3.6(typescript@5.2.2):
     resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1371,7 +1371,7 @@ packages:
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
-      typescript: 5.0.2
+      typescript: 5.2.2
     dev: true
 
   /create-jest@29.7.0(@types/node@18.18.4):
@@ -3200,7 +3200,7 @@ packages:
     dependencies:
       is-number: 7.0.0
 
-  /ts-jest@29.1.1(@babel/core@7.23.0)(jest@29.7.0)(typescript@5.0.2):
+  /ts-jest@29.1.1(@babel/core@7.23.0)(jest@29.7.0)(typescript@5.2.2):
     resolution: {integrity: sha512-D6xjnnbP17cC85nliwGiL+tpoKN0StpgE0TeOjXQTU6MVCfsB4v7aW05CgQ/1OywGb0x/oy9hHFnN+sczTiRaA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -3230,7 +3230,7 @@ packages:
       lodash.memoize: 4.1.2
       make-error: 1.3.6
       semver: 7.5.4
-      typescript: 5.0.2
+      typescript: 5.2.2
       yargs-parser: 21.1.1
     dev: true
 
@@ -3254,9 +3254,9 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /typescript@5.0.2:
-    resolution: {integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==}
-    engines: {node: '>=12.20'}
+  /typescript@5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
     hasBin: true
     dev: true
 

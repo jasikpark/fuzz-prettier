@@ -26,8 +26,8 @@ devDependencies:
     specifier: 18.18.4
     version: 18.18.4
   '@types/prettier':
-    specifier: 2.7.2
-    version: 2.7.2
+    specifier: 2.7.3
+    version: 2.7.3
   jest:
     specifier: ^29.7.0
     version: 29.7.0(@types/node@18.18.4)
@@ -942,8 +942,8 @@ packages:
     resolution: {integrity: sha512-t3rNFBgJRugIhackit2mVcLfF6IRc0JE4oeizPQL8Zrm8n2WY/0wOdpOPhdtG0V9Q2TlW/axbF1MJ6z+Yj/kKQ==}
     dev: true
 
-  /@types/prettier@2.7.2:
-    resolution: {integrity: sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==}
+  /@types/prettier@2.7.3:
+    resolution: {integrity: sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==}
     dev: true
 
   /@types/stack-utils@2.0.1:

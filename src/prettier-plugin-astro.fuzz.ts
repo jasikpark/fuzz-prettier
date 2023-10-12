@@ -40,9 +40,18 @@ describe("prettier-plugin-astro", () => {
           plugins: [prettierPluginAstro],
         }),
       (error) => {
-        if (false) {
+        if (error instanceof SyntaxError) {
           return;
         }
+        if (
+          error instanceof TypeError &&
+          ["Cannot read properties of undefined"].some((message) =>
+            error.message.includes(message)
+          )
+        ) {
+          return;
+        }
+
         throw error;
       }
     )

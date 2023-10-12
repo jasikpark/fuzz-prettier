@@ -10,7 +10,6 @@ export function naive(
     try {
       await formattingFn(data.toString());
     } catch (error: unknown) {
-      console.warn(error);
       handleErrors(error);
     }
   };

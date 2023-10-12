@@ -2,30 +2,31 @@ import "@jazzer.js/jest-runner";
 import prettier from "prettier";
 import * as prettierPluginTOML from "prettier-plugin-toml";
 import { idempotent } from "./util/idempotent.js";
+import { naive } from "./util/naive.js";
 
 describe("prettier-plugin-toml", () => {
-  it.fuzz("formats a basic setup", async (data: Buffer) => {
-    try {
-      const output = await prettier.format(data.toString(), {
-        parser: "toml",
-        plugins: [prettierPluginTOML],
-      });
-    } catch (error) {
-      // check that the error message returns this value
-      if (
-        error instanceof SyntaxError ||
-        (error instanceof Error && error?.message.includes("SyntaxError")) ||
-        (error instanceof Error &&
-          error?.message.includes("Sad sad panda, lexing errors")) ||
-        (error instanceof Error &&
-          error?.message.includes("Sad sad panda, parsing errors detected")) ||
-        (typeof error === "string" && error.includes("SyntaxError"))
-      ) {
-        return;
+  it.fuzz(
+    "formats a basic setup",
+    naive(
+      async (input: string) =>
+        await prettier.format(input, {
+          parser: "toml",
+          plugins: [prettierPluginTOML],
+        }),
+      (error) => {
+        if (
+          error instanceof Error &&
+          [
+            "Sad sad panda, parsing errors detected in line",
+            "Sad sad panda, lexing errors detected in line",
+          ].some((prefix) => error.message.includes(prefix))
+        ) {
+          return;
+        }
+        throw error;
       }
-      throw error;
-    }
-  });
+    )
+  );
 
   it.fuzz(
     "prints a roundtrip correctly",

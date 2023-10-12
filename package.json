@@ -16,8 +16,8 @@
     "fuzz-toml-idempotent": "pnpm fuzz --testNamePattern 'prettier-plugin-toml prints a roundtrip correctly'",
     "fuzz-go-template-simple": "pnpm fuzz --testNamePattern 'prettier-plugin-go-template formats a basic setup'",
     "fuzz-go-template-idempotent": "pnpm fuzz --testNamePattern 'prettier-plugin-go-template prints a roundtrip correctly'",
-    "fuzz-astro-simple": "jazzer ./dist/fuzz-astro-simple.js corpus -- -max_total_time=60",
-    "fuzz-astro-idempotent": "jazzer ./dist/fuzz-astro-idempotent.js corpus -- -max_total_time=60",
+    "fuzz-astro-simple": "pnpm fuzz --testNamePattern 'prettier-plugin-astro formats a basic setup'",
+    "fuzz-astro-idempotent": "pnpm fuzz --testNamePattern 'prettier-plugin-astro prints a roundtrip correctly'",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "fuzz": "NODE_OPTIONS=--experimental-vm-modules JAZZER_FUZZ=1 jest",
     "coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
@@ -36,7 +36,7 @@
         "preset": "ts-jest",
         "testEnvironment": "node",
         "testMatch": [
-          "<rootDir>/*.fuzz.[jt]s"
+          "<rootDir>/src/*.fuzz.[jt]s"
         ],
         "testRunner": "@jazzer.js/jest-runner",
         "extensionsToTreatAsEsm": [

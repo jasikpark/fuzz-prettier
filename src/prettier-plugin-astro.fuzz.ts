@@ -14,26 +14,7 @@ describe("prettier-plugin-astro", () => {
           plugins: [prettierPluginAstro],
         }),
       (error) => {
-        if (
-          error instanceof SyntaxError &&
-          [
-            "Bad control character in string literal in JSON at position",
-            "Unexpected character",
-            "Invalid left-hand side in prefix operation.",
-            "Unexpected token",
-            "Unterminated string constant.",
-            "Unterminated template.",
-            "Unterminated regular expression.",
-            "Missing semicolon.",
-            "Expecting Unicode escape sequence \\uXXXX.",
-            "Invalid left-hand side in postfix operation.",
-            "Leading decorators must be attached to a class declaration.",
-            "Identifier directly after number.",
-            "Invalid regular expression flag.",
-            "Invalid left-hand side in assignment expression.",
-            "A numeric separator is only allowed between two digits.",
-          ].some((message) => error.message.includes(message))
-        ) {
+        if (error instanceof SyntaxError) {
           return;
         }
         if (

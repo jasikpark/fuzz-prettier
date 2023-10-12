@@ -35,7 +35,19 @@ describe("prettier-plugin-toml", () => {
         await prettier.format(input, {
           parser: "toml",
           plugins: [prettierPluginTOML],
-        })
+        }),
+      (error) => {
+        if (
+          error instanceof Error &&
+          [
+            "Sad sad panda, parsing errors detected in line",
+            "Sad sad panda, lexing errors detected in line",
+          ].some((prefix) => error.message.includes(prefix))
+        ) {
+          return;
+        }
+        throw error;
+      }
     )
   );
 });

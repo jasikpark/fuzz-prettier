@@ -14,8 +14,8 @@ dependencies:
 
 devDependencies:
   '@jazzer.js/core':
-    specifier: 2.0.0
-    version: 2.0.0
+    specifier: 2.1.0
+    version: 2.1.0
   '@jazzer.js/jest-runner':
     specifier: ^2.0.0
     version: 2.1.0(@types/jest@29.5.8)(jest@29.7.0)(typescript@5.2.2)
@@ -427,40 +427,12 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /@jazzer.js/bug-detectors@2.0.0:
-    resolution: {integrity: sha512-m7DyeXzPnxsQE3dWkO+5hb2aIKBupPfU/t2q+PwRtUrYDy9MtSMZi2hUeGy8OXGmf2Uo32WwrYgiErgxtxrh7g==}
-    engines: {node: '>= 14.0.0', npm: '>= 7.0.0'}
-    dependencies:
-      '@jazzer.js/core': 2.0.0
-      '@jazzer.js/hooking': 2.0.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@jazzer.js/bug-detectors@2.1.0:
     resolution: {integrity: sha512-rFERKoSkLNZq52rRCXQKRqLX9Bfkb2+tzMrI/tDQ27//HwfdaJUej4MPKXg3YxFSGAEtshNNSXAn2liJmyLWpQ==}
     engines: {node: '>= 14.0.0', npm: '>= 7.0.0'}
     dependencies:
       '@jazzer.js/core': 2.1.0
       '@jazzer.js/hooking': 2.1.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /@jazzer.js/core@2.0.0:
-    resolution: {integrity: sha512-p3ifJuTX7Td7No5cRqMiNCqMO/kOYKkGGB7X43/X4JaK5DblxeENvVGo7jXUOkUJ5sWhRslZEzL9D2ai36dq3Q==}
-    engines: {node: '>= 14.0.0', npm: '>= 7.0.0'}
-    hasBin: true
-    dependencies:
-      '@jazzer.js/bug-detectors': 2.0.0
-      '@jazzer.js/fuzzer': 2.0.0
-      '@jazzer.js/hooking': 2.0.0
-      '@jazzer.js/instrumentor': 2.0.0
-      istanbul-lib-coverage: 3.2.1
-      istanbul-lib-report: 3.0.1
-      istanbul-reports: 3.1.6
-      tmp: 0.2.1
-      yargs: 17.7.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -483,19 +455,6 @@ packages:
       - supports-color
     dev: true
 
-  /@jazzer.js/fuzzer@2.0.0:
-    resolution: {integrity: sha512-t2xOzFF6p/OTq9KlyX5zDCD9ucIaIybYQYq/TDZ/7OBV0XAtutd9/4+768dTiRpHg1tg3kAqwp0qoeaqlQYFUw==}
-    engines: {node: '>= 14.0.0', npm: '>= 7.0.0'}
-    requiresBuild: true
-    dependencies:
-      bindings: 1.5.0
-      cmake-js: 7.2.1
-      node-addon-api: 7.0.0
-      prebuild-install: 7.1.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@jazzer.js/fuzzer@2.1.0:
     resolution: {integrity: sha512-WroUAGH1+AFoI+5kRGOjvh9+1GsYEmCinvEt9yF0E0pBTeadssCG6Y8adeYh6W0rum2LjPsjVfLEWMunRLt/Ew==}
     engines: {node: '>= 14.0.0', npm: '>= 7.0.0'}
@@ -509,36 +468,11 @@ packages:
       - supports-color
     dev: true
 
-  /@jazzer.js/hooking@2.0.0:
-    resolution: {integrity: sha512-D80MM4Q5AtBwXlgC/7RDiJsJ0WwCnjhegDy1llbzahgHDwVQdfcVlWSLpGXG4vHerZVgUBPKQgNu6mxGzpFwEg==}
-    engines: {node: '>= 14.0.0', npm: '>= 7.0.0'}
-    dependencies:
-      '@babel/core': 7.23.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@jazzer.js/hooking@2.1.0:
     resolution: {integrity: sha512-caNQslD27mxkYfi7woVEN98rbPL41Ezn/pGkMB/ghcBWcG0jCJDqacRJX4Gv8ypfIhemDJEocL26Ld2XSx07Pw==}
     engines: {node: '>= 14.0.0', npm: '>= 7.0.0'}
     dependencies:
       '@babel/core': 7.23.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /@jazzer.js/instrumentor@2.0.0:
-    resolution: {integrity: sha512-hEvuZbwastQbSNlYJk14AJ7Yh6GL3zWMgfJagCI8Ah+lE3l2zhC812jhomwARhjjG9HEbGSYqIA3Ph42PSKJBA==}
-    engines: {node: '>= 14.0.0', npm: '>= 7.0.0'}
-    dependencies:
-      '@babel/core': 7.23.2
-      '@babel/generator': 7.23.0
-      '@jazzer.js/fuzzer': 2.0.0
-      '@jazzer.js/hooking': 2.0.0
-      istanbul-lib-hook: 3.0.0
-      istanbul-lib-instrument: 6.0.1
-      proper-lockfile: 4.1.2
-      source-map-support: 0.5.21
     transitivePeerDependencies:
       - supports-color
     dev: true

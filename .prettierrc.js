@@ -1,6 +1,6 @@
 /** @type {import("prettier").Config} */
 const config = {
-  plugins: ["prettier-plugin-pkg", "prettier-plugin-autocorrect"],
+  plugins: ["prettier-plugin-pkg"],
 };
 
 export default config;

@@ -22,8 +22,8 @@ describe("prettier-parser-html", () => {
           return;
         }
         throw error;
-      }
-    )
+      },
+    ),
   );
 
   it.fuzz(
@@ -32,7 +32,7 @@ describe("prettier-parser-html", () => {
       async (input: string) =>
         await prettier.format(input, {
           parser: "html",
-        })
-    )
+        }),
+    ),
   );
 });

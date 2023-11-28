@@ -1,3 +1,2 @@
-
-declare module 'prettier-plugin-toml'
-declare module 'prettier-plugin-astro'
+declare module "prettier-plugin-toml";
+declare module "prettier-plugin-astro";

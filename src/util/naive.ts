@@ -4,7 +4,7 @@
  */
 export function naive(
   formattingFn: (input: string) => Promise<string>,
-  handleErrors: (error: unknown) => void | never
+  handleErrors: (error: unknown) => void | never,
 ) {
   return async function (data: Buffer) {
     try {

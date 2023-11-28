@@ -16,8 +16,8 @@ describe("prettier-parser-babel", () => {
           return;
         }
         throw error;
-      }
-    )
+      },
+    ),
   );
 
   it.fuzz(
@@ -26,7 +26,7 @@ describe("prettier-parser-babel", () => {
       async (input: string) =>
         await prettier.format(input, {
           parser: "babel",
-        })
-    )
+        }),
+    ),
   );
 });

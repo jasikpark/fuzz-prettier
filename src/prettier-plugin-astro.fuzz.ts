@@ -20,15 +20,15 @@ describe("prettier-plugin-astro", () => {
         if (
           error instanceof TypeError &&
           ["Cannot read properties of undefined"].some((message) =>
-            error.message.includes(message)
+            error.message.includes(message),
           )
         ) {
           return;
         }
 
         throw error;
-      }
-    )
+      },
+    ),
   );
 
   it.fuzz(
@@ -46,14 +46,14 @@ describe("prettier-plugin-astro", () => {
         if (
           error instanceof TypeError &&
           ["Cannot read properties of undefined"].some((message) =>
-            error.message.includes(message)
+            error.message.includes(message),
           )
         ) {
           return;
         }
 
         throw error;
-      }
-    )
+      },
+    ),
   );
 });

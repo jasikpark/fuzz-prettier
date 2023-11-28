@@ -1,27 +1,47 @@
 {
   "name": "fuzz-prettier",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
   "type": "module",
+  "description": "",
+  "author": "Caleb Jasik",
+  "license": "ISC",
+  "private": true,
+  "packageManager": "pnpm@8.11.0",
   "main": "index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "build:watch": "tsc -p tsconfig.json --watch",
-    "fuzz-babel-simple": "pnpm fuzz --testNamePattern 'prettier-parser-babel formats a basic setup'",
-    "fuzz-babel-idempotent": "pnpm fuzz --testNamePattern 'prettier-parser-babel prints a roundtrip correctly'",
-    "fuzz-html-simple": "pnpm fuzz --testNamePattern 'prettier-parser-html formats a basic setup'",
-    "fuzz-html-idempotent": "pnpm fuzz --testNamePattern 'prettier-parser-html prints a roundtrip correctly'",
-    "fuzz-toml-simple": "pnpm fuzz --testNamePattern 'prettier-plugin-toml formats a basic setup'",
-    "fuzz-toml-idempotent": "pnpm fuzz --testNamePattern 'prettier-plugin-toml prints a roundtrip correctly'",
-    "fuzz-go-template-simple": "pnpm fuzz --testNamePattern 'prettier-plugin-go-template formats a basic setup'",
-    "fuzz-go-template-idempotent": "pnpm fuzz --testNamePattern 'prettier-plugin-go-template prints a roundtrip correctly'",
-    "fuzz-astro-simple": "pnpm fuzz --testNamePattern 'prettier-plugin-astro formats a basic setup'",
-    "fuzz-astro-idempotent": "pnpm fuzz --testNamePattern 'prettier-plugin-astro prints a roundtrip correctly'",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "fuzz": "NODE_OPTIONS=--experimental-vm-modules JAZZER_FUZZ=1 jest",
     "coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "format": "prettier -w .",
+    "fuzz": "NODE_OPTIONS=--experimental-vm-modules JAZZER_FUZZ=1 jest",
+    "fuzz-astro-idempotent": "pnpm fuzz --testNamePattern 'prettier-plugin-astro prints a roundtrip correctly'",
+    "fuzz-astro-simple": "pnpm fuzz --testNamePattern 'prettier-plugin-astro formats a basic setup'",
+    "fuzz-babel-idempotent": "pnpm fuzz --testNamePattern 'prettier-parser-babel prints a roundtrip correctly'",
+    "fuzz-babel-simple": "pnpm fuzz --testNamePattern 'prettier-parser-babel formats a basic setup'",
+    "fuzz-go-template-idempotent": "pnpm fuzz --testNamePattern 'prettier-plugin-go-template prints a roundtrip correctly'",
+    "fuzz-go-template-simple": "pnpm fuzz --testNamePattern 'prettier-plugin-go-template formats a basic setup'",
+    "fuzz-html-idempotent": "pnpm fuzz --testNamePattern 'prettier-parser-html prints a roundtrip correctly'",
+    "fuzz-html-simple": "pnpm fuzz --testNamePattern 'prettier-parser-html formats a basic setup'",
+    "fuzz-toml-idempotent": "pnpm fuzz --testNamePattern 'prettier-plugin-toml prints a roundtrip correctly'",
+    "fuzz-toml-simple": "pnpm fuzz --testNamePattern 'prettier-plugin-toml formats a basic setup'",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "prettier-plugin-astro": "^0.12.0",
+    "prettier-plugin-toml": "^2.0.0"
+  },
+  "devDependencies": {
+    "@jazzer.js/core": "2.1.0",
+    "@jazzer.js/jest-runner": "^2.0.0",
+    "@types/jest": "^29.5.5",
+    "@types/node": "20.10.0",
+    "jest": "^29.7.0",
+    "prettier": "3.1.0",
+    "prettier-plugin-go-template": "0.0.15",
+    "prettier-plugin-pkg": "^0.18.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "5.3.2"
   },
   "jest": {
     "projects": [
@@ -55,23 +75,5 @@
         }
       }
     ]
-  },
-  "author": "Caleb Jasik",
-  "license": "ISC",
-  "devDependencies": {
-    "@jazzer.js/core": "2.1.0",
-    "@jazzer.js/jest-runner": "^2.0.0",
-    "@types/jest": "^29.5.5",
-    "@types/node": "20.10.0",
-    "jest": "^29.7.0",
-    "prettier": "3.1.0",
-    "prettier-plugin-go-template": "0.0.15",
-    "ts-jest": "^29.1.1",
-    "typescript": "5.3.2"
-  },
-  "dependencies": {
-    "prettier-plugin-astro": "^0.12.0",
-    "prettier-plugin-toml": "^2.0.0"
-  },
-  "packageManager": "pnpm@8.11.0"
+  }
 }

@@ -24,8 +24,8 @@ describe("prettier-plugin-toml", () => {
           return;
         }
         throw error;
-      }
-    )
+      },
+    ),
   );
 
   it.fuzz(
@@ -47,7 +47,7 @@ describe("prettier-plugin-toml", () => {
           return;
         }
         throw error;
-      }
-    )
+      },
+    ),
   );
 });

@@ -17,14 +17,14 @@ describe("prettier-plugin-go-template", () => {
         if (
           error instanceof Error &&
           ["An error occured during printing. Found invalid node root."].some(
-            (prefix) => error.message.includes(prefix)
+            (prefix) => error.message.includes(prefix),
           )
         ) {
           return;
         }
         throw error;
-      }
-    )
+      },
+    ),
   );
 
   it.fuzz(
@@ -40,7 +40,7 @@ describe("prettier-plugin-go-template", () => {
           return;
         }
         throw error;
-      }
-    )
+      },
+    ),
   );
 });

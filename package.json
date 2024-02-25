@@ -6,7 +6,7 @@
   "author": "Caleb Jasik",
   "license": "ISC",
   "private": true,
-  "packageManager": "pnpm@8.11.0",
+  "packageManager": "pnpm@8.15.4",
   "main": "index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",

@@ -13,7 +13,7 @@ importers:
         version: 0.14.1
       prettier-plugin-toml:
         specifier: ^2.0.0
-        version: 2.0.1(prettier@3.5.1)
+        version: 2.0.2(prettier@3.5.1)
     devDependencies:
       '@jazzer.js/core':
         specifier: 2.1.0
@@ -1268,8 +1268,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.3
 
-  prettier-plugin-toml@2.0.1:
-    resolution: {integrity: sha512-99z1YOkViECHtXQjGIigd3talI/ybUI1zB3yniAwUrlWBXupNXThB1hM6bwSMUEj2/+tomTlMtT98F5t4s8IWA==}
+  prettier-plugin-toml@2.0.2:
+    resolution: {integrity: sha512-tUIIhyfdVX5DMsLGKX/2qaEwi3W48OkUSR7XC91PRI5jFzhexmaYWkrSP1Xh/eWUcEc0TVMQenM3lB09xLQstQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       prettier: ^3.0.3
@@ -3128,7 +3128,7 @@ snapshots:
     dependencies:
       prettier: 3.5.1
 
-  prettier-plugin-toml@2.0.1(prettier@3.5.1):
+  prettier-plugin-toml@2.0.2(prettier@3.5.1):
     dependencies:
       '@taplo/lib': 0.4.0-alpha.2
       prettier: 3.5.1

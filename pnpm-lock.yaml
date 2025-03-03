@@ -13,7 +13,7 @@ importers:
         version: 0.14.1
       prettier-plugin-toml:
         specifier: ^2.0.0
-        version: 2.0.2(prettier@3.5.1)
+        version: 2.0.2(prettier@3.5.3)
     devDependencies:
       '@jazzer.js/core':
         specifier: 2.1.0
@@ -31,14 +31,14 @@ importers:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@22.13.4)
       prettier:
-        specifier: 3.5.1
-        version: 3.5.1
+        specifier: 3.5.3
+        version: 3.5.3
       prettier-plugin-go-template:
         specifier: 0.0.15
-        version: 0.0.15(prettier@3.5.1)
+        version: 0.0.15(prettier@3.5.3)
       prettier-plugin-pkg:
         specifier: ^0.18.0
-        version: 0.18.1(prettier@3.5.1)
+        version: 0.18.1(prettier@3.5.3)
       ts-jest:
         specifier: ^29.1.1
         version: 29.2.6(@babel/core@7.26.9)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.26.9))(jest@29.7.0(@types/node@22.13.4))(typescript@5.7.3)
@@ -1322,8 +1322,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.3
 
-  prettier@3.5.1:
-    resolution: {integrity: sha512-hPpFQvHwL3Qv5AdRvBFMhnKo4tYxp0ReXiPn2bxkiohEX6mBeBwEpBSQTkD458RaaDKQMYSp4hX4UtfUTA5wDw==}
+  prettier@3.5.3:
+    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3219,24 +3219,24 @@ snapshots:
   prettier-plugin-astro@0.14.1:
     dependencies:
       '@astrojs/compiler': 2.10.4
-      prettier: 3.5.1
+      prettier: 3.5.3
       sass-formatter: 0.7.9
 
-  prettier-plugin-go-template@0.0.15(prettier@3.5.1):
+  prettier-plugin-go-template@0.0.15(prettier@3.5.3):
     dependencies:
-      prettier: 3.5.1
+      prettier: 3.5.3
       ulid: 2.3.0
 
-  prettier-plugin-pkg@0.18.1(prettier@3.5.1):
+  prettier-plugin-pkg@0.18.1(prettier@3.5.3):
     dependencies:
-      prettier: 3.5.1
+      prettier: 3.5.3
 
-  prettier-plugin-toml@2.0.2(prettier@3.5.1):
+  prettier-plugin-toml@2.0.2(prettier@3.5.3):
     dependencies:
       '@taplo/lib': 0.4.0-alpha.2
-      prettier: 3.5.1
+      prettier: 3.5.3
 
-  prettier@3.5.1: {}
+  prettier@3.5.3: {}
 
   pretty-format@29.7.0:
     dependencies:

@@ -37,8 +37,8 @@ importers:
         specifier: 0.0.15
         version: 0.0.15(prettier@3.5.3)
       prettier-plugin-pkg:
-        specifier: ^0.18.0
-        version: 0.18.1(prettier@3.5.3)
+        specifier: ^0.19.0
+        version: 0.19.0(prettier@3.5.3)
       ts-jest:
         specifier: ^29.1.1
         version: 29.2.6(@babel/core@7.26.9)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.26.9))(jest@29.7.0(@types/node@22.13.4))(typescript@5.7.3)
@@ -1310,8 +1310,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.0
 
-  prettier-plugin-pkg@0.18.1:
-    resolution: {integrity: sha512-FuUxvsYZR/8rsLH8s/jbPQmgYvv0yxW8LoIHCy6+Q7p4FBjjdP3DNKx8fMTOsc0SlEB1skB4o1LcahRceIh87A==}
+  prettier-plugin-pkg@0.19.0:
+    resolution: {integrity: sha512-wlBvVhAZQ+iOH8/4gWc1SxJbf5++xwKmnFkqHYUsmoQIg6hgdyL1055Z9FOWa6cumqL/QwqdOzY9aH4McdjKyw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       prettier: ^3.0.3
@@ -3227,7 +3227,7 @@ snapshots:
       prettier: 3.5.3
       ulid: 2.3.0
 
-  prettier-plugin-pkg@0.18.1(prettier@3.5.3):
+  prettier-plugin-pkg@0.19.0(prettier@3.5.3):
     dependencies:
       prettier: 3.5.3
 

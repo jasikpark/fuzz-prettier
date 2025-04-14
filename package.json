@@ -41,7 +41,7 @@
     "prettier-plugin-go-template": "0.0.15",
     "prettier-plugin-pkg": "^0.19.0",
     "ts-jest": "^29.1.1",
-    "typescript": "5.7.3"
+    "typescript": "5.8.3"
   },
   "jest": {
     "projects": [
